@@ -1,0 +1,26 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" charset="UTF-8" />
+    <title>@ViewBag.Title - Simple Blog</title>
+</head>
+<body>
+      <header>
+          <h1>
+             @Html.RouteLink("Home","Home")Simple Blog
+          </h1>
+          @Html.RouteLink("Login", "Login")Login
+
+      </header>
+    @RenderBody()
+
+    <footer>
+        &copy;@DateTime.UtcNow.Year - Me
+    </footer>
+
+    @RenderSection("Scripts",false)
+</body>
+</html>
